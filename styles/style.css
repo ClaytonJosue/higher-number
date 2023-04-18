@@ -1,6 +1,112 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.numbers_section {
+	text-align: center;
+}
+
+.subtitle {
+	text-align: center;
+	margin: 2rem 0;
+	font-weight: 500;
+}
+
+.form_label {
+	display: block;
+	font-size: 18px;
+}
+
+.form_input {
+	border: none;
+	background-color: gainsboro;
+	padding: 5px 2rem;
+	margin: 10px 0;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 18px;
+	outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.buttons {
+	margin: 5px 10px;
+	padding: 5px 15px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.add_button {
+	background-color: #A9A9A9;
+	cursor: pointer;
+	color: white;
+}
+
+.add_button:hover {
+	background-color: #808080;
+}
+
+.clear_button {
+	background-color: #B22222;
+	color: white;
+	cursor: pointer;
+}
+
+.clear_button:hover {
+	background-color: #8B0000;
+}
+
+.check_button {
+	background-color: #32CD32;
+	color: white;
+	cursor: pointer;
+}
+
+.check_button:hover {
+	background-color: #228B22;
+}
+
+.disabled_button {
+	background-color: #DCDCDC;
+	cursor: not-allowed;
+}
+
+.disabled_button:hover {
+	background-color: #DCDCDC;
+}
+
+.numbers-typed {
+	display: inline-block;
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.number_list {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.show-number {
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.number {
+	font-size: 25px;
+	font-weight: 600;
 }
 
 .disabled {

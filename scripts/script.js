@@ -35,6 +35,7 @@ function addNumber(event) {
 
 	if (numbers.length >= 5) {
 		addButton.disabled = true;
+		addButton.classList.add("disabled_button");
 	}
 }
 
@@ -49,6 +50,7 @@ function clearNumbers(event) {
 	typedNumbers.classList.add("disabled")
 	input.focus();
 	addButton.disabled = false;
+	addButton.classList.remove("disabled_button");
 }
 
 // create check numbers function 
