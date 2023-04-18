@@ -8,8 +8,14 @@ addButton.addEventListener("click", addNumber);
 const clearButton = document.querySelector(".clear_button");
 clearButton.addEventListener("click", clearNumbers);
 
+const checkButton = document.querySelector(".check_button");
+checkButton.addEventListener("click", checkNumbers);
+
 // number list
 let numberList = document.querySelector(".number_list");
+
+// max number 
+let maxNumberCheked = document.querySelector(".number");
 
 // create add number function
 
@@ -35,6 +41,19 @@ function clearNumbers(event) {
 	numbers = [];
 	console.log(numbers);
 	numberList.innerHTML = numbers;
+	maxNumberCheked.innerHTML = "";
 	input.focus();
 	addButton.disabled = false;
+}
+
+// create check numbers function 
+
+function checkNumbers(event) {
+	event.preventDefault();
+
+	var maxNumber = numbers.reduce((num1, num2) => {
+		return Math.max(num1, num2);
+	})
+
+	maxNumberCheked.innerHTML = maxNumber;
 }
