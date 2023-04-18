@@ -22,6 +22,10 @@ function addNumber(event) {
 	input.focus();
 	numberList.innerHTML = numbers;
 	console.log(numbers);
+
+	if (numbers.length >= 5) {
+		addButton.disabled = true;
+	}
 }
 
 // create clear numbers function
@@ -32,4 +36,5 @@ function clearNumbers(event) {
 	console.log(numbers);
 	numberList.innerHTML = numbers;
 	input.focus();
+	addButton.disabled = false;
 }
