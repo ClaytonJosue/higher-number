@@ -17,6 +17,9 @@ let numberList = document.querySelector(".number_list");
 // max number 
 let maxNumberCheked = document.querySelector(".number");
 
+// typed numbers
+let typedNumbers = document.querySelector(".numbers-typed")
+
 // create add number function
 
 let numbers = [];
@@ -27,6 +30,7 @@ function addNumber(event) {
 	input.value = "";
 	input.focus();
 	numberList.innerHTML = numbers;
+	typedNumbers.classList.remove("disabled")
 	console.log(numbers);
 
 	if (numbers.length >= 5) {
@@ -42,6 +46,7 @@ function clearNumbers(event) {
 	console.log(numbers);
 	numberList.innerHTML = numbers;
 	maxNumberCheked.innerHTML = "";
+	typedNumbers.classList.add("disabled")
 	input.focus();
 	addButton.disabled = false;
 }
